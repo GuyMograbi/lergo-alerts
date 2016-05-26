@@ -27,7 +27,7 @@ function monitor(){
                 logger.info('dbContent[tag] + 60 * 1000 * 60 < new Date().getTime() ',dbContent[tag] + 60 * 1000 * 60 < new Date().getTime() );
                 dbContent[tag] = new Date().getTime();
                 db.save(dbContent);
-                //mailer.sendMail(tag);
+                mailer.sendMail(tag);
             } else if ( !result && dbContent.hasOwnProperty(tag) ) {
                 delete dbContent[tag];
                 db.save(dbContent);
