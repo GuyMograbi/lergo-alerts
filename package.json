@@ -1,0 +1,13 @@
+{
+  "name": "lergo-alerts",
+  "version": "0.0.0",
+  "dependencies": {
+    "fs-extra": "^0.30.0",
+    "lodash": "^4.13.1",
+    "log4js": "^0.6.36",
+    "node-mailjet": "~2.0.1"
+  },
+  "bin" : {
+    "lergo-alerts" : "./index.js"
+  }
+}
